@@ -1,0 +1,45 @@
+---
+title: "Untitled"
+author: "jene"
+date: "14 de junio de 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(ggplot2)
+library(plotly)
+```
+
+```{r}
+plotly()
+head(economics)
+ (economics)
+```
+
+
+
+```{r}
+dim (economics)
+```
+
+```{r}
+str (economics)
+```
+
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot_ly(economics, x = ~date, color = I("blue")) %>%
+  add_lines(y = ~uempmed) %>%
+  add_lines(y = ~psavert, color = I("red"))
+
+```
