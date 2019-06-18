@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "Coursera Developind Data  Semana 3"
 author: "jene"
 date: "14 de junio de 2019"
 output: html_document
@@ -14,7 +14,9 @@ knitr::opts_chunk$set(echo = TRUE)
 library(ggplot2)
 library(plotly)
 ```
+## Markdown
 
+esta es  una presentacion de markdown correspondiente a  la semana3 del curso Developind Data
 ```{r}
 plotly()
 head(economics)
@@ -33,13 +35,12 @@ str (economics)
 
 
 
-## Including Plots
+## Including Plotys
 
-You can also embed plots, for example:
+Entrada como  primer argumento de entrada y devuelve un objeto de trazado modificado
 
 ```{r, echo=FALSE}
 plot_ly(economics, x = ~date, color = I("blue")) %>%
   add_lines(y = ~uempmed) %>%
   add_lines(y = ~psavert, color = I("red"))
-
 ```
